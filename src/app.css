@@ -59,7 +59,7 @@
   letter-spacing: .15em;
   animation:
     typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+    blinkTextCursor 1000ms steps(1) infinite normal;
 }
 
 .typewriter {
@@ -96,11 +96,11 @@
 }
 
 @keyframes blinkTextCursor {
-  from {
+  0% {
     border-right-color: rgba(255, 255, 255, .75);
   }
 
-  to {
-    border-right-color: transparent;
+  50% {
+    border-right-color: rgba(255, 255, 255, 0);
   }
 }
