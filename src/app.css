@@ -69,8 +69,21 @@
   animation: translateIn 2s ease-out;
 }
 
+.translate-in-2 {
+  animation: translateIn 2s ease-out;
+}
+
+.fade-in {
+  transition:
+    opacity 2s ease-out;
+}
+
 @starting-style {
   .typewriter {
+    opacity: 0;
+  }
+
+  .fade-in {
     opacity: 0;
   }
 }
