@@ -77,9 +77,9 @@ function AboutSection() {
         <A href={github_url} class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
           <h3 class="font-semibold text-2xl text-primary">Software Developer</h3>
           <p class="text-sm mt-2">
-            I've been programming for years in several language. I started to programming by creating games on Roblox, and have expanded my knowledge to span numerous categories.
+            I've been programming for years in several language. I started to program by creating games on Roblox and over years have expanded my knowledge to span numerous categories.
           </p>
-          <div class="flex flex-col space-y-2">
+          <div class="flex flex-col space-y-2 mt-2">
             <p class="flex items-center text-lg">
               <img src="/icons/rust.svg" alt="" class="size-10 mr-2" />
               Rust
