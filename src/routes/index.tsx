@@ -60,7 +60,7 @@ function AboutSection() {
   return (
     <div class="h-screen pt-48 px-32 fade-in">
       <h2 id="about" class="font-bold text-3xl">Who Am I?</h2>
-      <div class="my-4 grid md:grid-cols-5 space-x-4">
+      <div class="my-4 grid md:grid-cols-5 gap-4">
         <A href="/photos" class="p-2 rounded-xl border overflow-hidden relative h-72 group col-span-2">
           <img src="/drone.jpg" alt="" class="bg-center bg-cover opacity-30 absolute left-0 top-0 w-full h-auto transition duration-300 group-hover:opacity-40" />
           <div class="relative h-full">
@@ -131,6 +131,37 @@ function AboutSection() {
               <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
             </p>
           </div>
+        </A>
+        <A href="/risk-at-rest" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors">
+          <h3 class="font-semibold text-2xl text-primary">Risk At Rest: To What Extent Is The Government Protecting Our Data?</h3>
+          <p class="text-sm mt-2">
+            A Paper I have written in regards to government policies & initiatives to improve the cybersecurity landscape.
+          </p>
+          <p class="flex items-center text-lg absolute bottom-4 right-4">Read
+            <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
+          </p>
+        </A>
+        <A href="/resume" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
+          <h3 class="font-semibold text-2xl text-primary">Soft Skills</h3>
+          <div class="flex flex-col space-y-2 mt-2">
+            <p><span class="font-semibold">Leadership</span> - An important part of any job is knowing when to take charge and helping everyone succeed.</p>
+            <p><span class="font-semibold">Patient</span>    - In any situation it is critical to stay level headed and not rush others; you want their best work.</p>
+            <p><span class="font-semibold">Receptive</span>  - Everyone makes mistakes, and being able to take critism and provide insightful critism is important.</p>
+            <p><span class="font-semibold">Flexible</span>   - Being able to adapt to changing environments is a necessity in an ever changing landscape.</p>
+          </div>
+        </A>
+        <A href="/resume" class="p-2 rounded-xl border overflow-hidden relative h-72 group col-span-2">
+          <img src="/homes.jpg" alt="" class="bg-center bg-cover opacity-30 absolute left-0 top-0 w-full h-auto transition duration-300 group-hover:opacity-40" />
+          <div class="relative h-full">
+            <h3 class="font-semibold text-2xl text-primary">Real Estate Associate</h3>
+            <p class="text-sm mt-2">
+              Having years of experience doing manual labor, working with power tools, and thinking on my feet
+              has helped gain valuable skills ranging from physical tasks to problem solving.
+            </p>
+          </div>
+          <p class="flex items-center text-lg absolute bottom-4 right-4">Resume
+            <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
+          </p>
         </A>
       </div>
     </div>
