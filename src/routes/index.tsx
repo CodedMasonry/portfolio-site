@@ -6,7 +6,7 @@ const github_url = "https://github.com/CodedMasonry"
 
 export default function Home() {
   return (
-    <main>
+    <main class="">
       <Hero />
       <AboutSection />
       <Contact />
@@ -16,8 +16,8 @@ export default function Home() {
 
 function Hero() {
   return (
-    <div class="bg-gradient-to-b from-accent to-background">
-      <div class="mx-40 translate-y-36">
+    <div class="bg-grid">
+      <div class="mx-40 translate-y-36 pb-40">
         <div
           class="flex"
         >
@@ -41,11 +41,11 @@ function Hero() {
                 <img src="/icons/markdown.svg" alt="" class="size-6 mr-2" />
                 Resume.md
               </Button>
-              <Button as={A} href="/#about" variant="outline" size="lg">
+              <Button as={A} href="/#about" variant="secondary" size="lg">
                 <img src="/icons/corner-left-down.svg" alt="" class="size-6 mr-2 invert" />
                 About Me</Button>
 
-              <Button as={A} href={github_url} variant="outline" size="lg">
+              <Button as={A} href={github_url} variant="ghost" size="lg">
                 <img src="/icons/github.svg" alt="" class="size-6 mr-2 invert" />
                 Github
               </Button>
@@ -59,7 +59,7 @@ function Hero() {
 
 function AboutSection() {
   return (
-    <div class="pt-48 px-32 fade-in">
+    <div class="pt-16 px-32 fade-in">
       <h2 id="about" class="font-bold text-3xl">Who Am I?</h2>
       <div class="my-4 grid md:grid-cols-5 gap-4">
         <A href={github_url} class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
