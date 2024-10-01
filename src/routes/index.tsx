@@ -67,7 +67,7 @@ function AboutSection() {
           </p>
           <div class="flex flex-col space-y-2 mt-2">
             <p class="flex items-center text-lg">
-              <img src="/icons/rust.svg" alt="" class="size-10 mr-2" />
+              <img src="/icons/rust.svg" alt="" class="size-10 mr-2 invert" />
               Rust
             </p>
             <p class="flex items-center text-lg">
