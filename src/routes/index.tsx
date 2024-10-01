@@ -9,6 +9,7 @@ export default function Home() {
     <main>
       <Hero />
       <AboutSection />
+      <Contact />
     </main>
   );
 }
@@ -58,22 +59,9 @@ function Hero() {
 
 function AboutSection() {
   return (
-    <div class="h-screen pt-48 px-32 fade-in">
+    <div class="pt-48 px-32 fade-in">
       <h2 id="about" class="font-bold text-3xl">Who Am I?</h2>
       <div class="my-4 grid md:grid-cols-5 gap-4">
-        <A href="/photos" class="p-2 rounded-xl border overflow-hidden relative h-72 group col-span-2">
-          <img src="/drone.jpg" alt="" class="bg-center bg-cover opacity-30 absolute left-0 top-0 w-full h-auto transition duration-300 group-hover:opacity-40" />
-          <div class="relative h-full">
-            <h3 class="font-semibold text-2xl text-primary">Certified Drone Pilot</h3>
-            <p class="text-sm mt-2">
-              I am a Part 107 Certified Drone Pilot in the United States. A hobby of mine is photography and drones,
-              so I decided to become certified.
-            </p>
-          </div>
-          <p class="flex items-center text-lg absolute bottom-4 right-4">Gallery
-            <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
-          </p>
-        </A>
         <A href={github_url} class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
           <h3 class="font-semibold text-2xl text-primary">Software Developer</h3>
           <p class="text-sm mt-2">
@@ -94,6 +82,28 @@ function AboutSection() {
             </p>
           </div>
           <p class="flex items-center text-lg absolute bottom-4 right-4">Github
+            <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
+          </p>
+        </A>
+        <A href="/photos" class="p-2 rounded-xl border overflow-hidden relative h-72 group col-span-2">
+          <img src="/drone.jpg" alt="" class="bg-center bg-cover opacity-30 absolute left-0 top-0 w-full h-auto transition duration-300 group-hover:opacity-40" />
+          <div class="relative h-full">
+            <h3 class="font-semibold text-2xl text-primary">Certified Drone Pilot</h3>
+            <p class="text-sm mt-2">
+              I am a Part 107 Certified Drone Pilot in the United States. A hobby of mine is photography and drones,
+              so I decided to become certified.
+            </p>
+          </div>
+          <p class="flex items-center text-lg absolute bottom-4 right-4">Gallery
+            <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
+          </p>
+        </A>
+        <A href="/risk-at-rest" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors">
+          <h3 class="font-semibold text-2xl text-primary">Risk At Rest: To What Extent Is The Government Protecting Our Data?</h3>
+          <p class="text-sm mt-2">
+            A Paper I have written in regards to government policies & initiatives to improve the cybersecurity landscape.
+          </p>
+          <p class="flex items-center text-lg absolute bottom-4 right-4">Read
             <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
           </p>
         </A>
@@ -132,15 +142,6 @@ function AboutSection() {
             </p>
           </div>
         </A>
-        <A href="/risk-at-rest" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors">
-          <h3 class="font-semibold text-2xl text-primary">Risk At Rest: To What Extent Is The Government Protecting Our Data?</h3>
-          <p class="text-sm mt-2">
-            A Paper I have written in regards to government policies & initiatives to improve the cybersecurity landscape.
-          </p>
-          <p class="flex items-center text-lg absolute bottom-4 right-4">Read
-            <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
-          </p>
-        </A>
         <A href="/resume" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
           <h3 class="font-semibold text-2xl text-primary">Soft Skills</h3>
           <div class="flex flex-col space-y-2 mt-2">
@@ -164,6 +165,19 @@ function AboutSection() {
           </p>
         </A>
       </div>
+    </div>
+  )
+}
+
+function Contact() {
+  return (
+    <div class="pb-28 pt-10 px-32 fade-in">
+      <h2 id="about" class="font-bold text-3xl">Want To Know More?</h2>
+      <p class="max-w-xl mb-4 mt-2">Read my resume, it is a file dedicated to explaining who I am, what I do, and what I'm passionate about.</p>
+      <Button as={A} href="/resume" size="lg">
+        <img src="/icons/markdown.svg" alt="" class="size-6 mr-2" />
+        Resume.md
+      </Button>
     </div>
   )
 }
