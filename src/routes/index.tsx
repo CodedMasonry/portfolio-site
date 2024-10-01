@@ -170,7 +170,8 @@ function AboutSection() {
 function Contact() {
   return (
     <div class="py-6 mt-10 px-8 md:px-32 fade-in bg-accent/50">
-      <div class="flex flex-col md:flex-row md:space-x-4 my-auto text-xl">
+      <div class="flex flex-col md:flex-row md:space-x-4 my-auto text-xl items-center">
+        <img src="/favicon.svg" alt="" class="size-8 inline-flex" />
         <p>Brock Mason Shaffer</p>
         <p class="font-semibold">Mason@CodedMasonry.com</p>
       </div>
