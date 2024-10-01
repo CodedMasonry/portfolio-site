@@ -17,7 +17,7 @@ export default function Home() {
 function Hero() {
   return (
     <div class="bg-grid">
-      <div class="mx-8 lg:mx-40 translate-y-36 pb-40">
+      <div class="mx-8 lg:mx-40 translate-y-12 pb-20 md:translate-y-36 md:pb-40">
         <div class="flex flex-col md:flex-row items-center md:items-start">
           <img
             src="/drone_highway.jpg"
@@ -26,7 +26,7 @@ function Hero() {
           />
           <div class="typewriter flex flex-col ml-8 mt-8 items-center md:items-start">
             <h1 class="text-4xl font-bold max-w-96">Hello, I'm Brock.</h1>
-            <h3 class="text-xl text-primary">Software Developer, Cybersecurity Enthusiast</h3>
+            <h3 class="text-xl text-primary text-center md:text-start">Software Developer, Cybersecurity Enthusiast</h3>
             <p class="mt-4 max-w-3xl">
               I'm a high school student from Ohio with years of programming experience,
               focusing on network programming, and malware development.
@@ -34,16 +34,16 @@ function Hero() {
               I'm also passionate about bridging the gap between the technical and business aspects of technology,
               emphasizing clear communication and collaboration to push results.
             </p>
-            <div class="flex flex-row mt-8 space-x-4">
-              <Button as={A} href="/resume" size="lg">
+            <div class="flex flex-col md:flex-row mt-8 md:space-x-4">
+              <Button as={A} href="/resume" class="md:h-11 md:rounded-md md:px-8">
                 <img src="/icons/markdown.svg" alt="" class="size-6 mr-2" />
                 Resume.md
               </Button>
-              <Button as={A} href="/#about" variant="ghost" size="lg">
+              <Button as={A} href="/#about" variant="ghost" class="md:h-11 md:rounded-md md:px-8">
                 <img src="/icons/corner-left-down.svg" alt="" class="size-6 mr-2 invert" />
                 About Me</Button>
 
-              <Button as={A} href={github_url} variant="ghost" size="lg">
+              <Button as={A} href={github_url} variant="ghost" class="md:h-11 md:rounded-md md:px-8">
                 <img src="/icons/github.svg" alt="" class="size-6 mr-2 invert" />
                 Github
               </Button>
@@ -58,7 +58,7 @@ function Hero() {
 function AboutSection() {
   return (
     <div class="pt-16 px-8 md:px-32 fade-in">
-      <h2 id="about" class="font-bold text-4xl ml-4">Who Am I?</h2>
+      <h2 id="about" class="font-bold text-4xl ml-4 text-center md:text-start">Who Am I?</h2>
       <div class="my-4 grid md:grid-cols-2 xl:grid-cols-5 gap-4">
         <A href={github_url} class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
           <h3 class="font-semibold text-2xl text-primary">Software Developer</h3>
@@ -84,7 +84,7 @@ function AboutSection() {
           </p>
         </A>
         <A href="/photos" class="p-2 rounded-xl border overflow-hidden relative h-72 group col-span-2">
-          <img src="/drone.jpg" alt="" class="bg-center bg-cover opacity-30 absolute left-0 top-0 w-full h-auto transition duration-300 group-hover:opacity-40" />
+          <img src="/drone.jpg" alt="" class="bg-center bg-cover opacity-30 absolute left-0 top-0 w-full h-auto transition duration-300 group-hover:opacity-40 aspect-square md:aspect-auto" />
           <div class="relative h-full">
             <h3 class="font-semibold text-2xl text-primary">Certified Drone Pilot</h3>
             <p class="text-sm mt-2">
@@ -96,7 +96,7 @@ function AboutSection() {
             <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
           </p>
         </A>
-        <A href="/risk-at-rest" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors">
+        <A href="/risk-at-rest" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2 md:col-span-1">
           <h3 class="font-semibold text-2xl text-primary">Risk At Rest: To What Extent Is The Government Protecting Our Data?</h3>
           <p class="tex text-sm mt-2">
             A Paper I have written in regards to government policies to improve the cybersecurity landscape.
@@ -105,7 +105,7 @@ function AboutSection() {
             <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
           </p>
         </A>
-        <A href="https://github.com/CodedMasonry/portfolio-site" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors">
+        <A href="https://github.com/CodedMasonry/portfolio-site" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2 md:col-span-1">
           <h3 class="font-semibold text-2xl text-primary">Technology Enthusiast</h3>
           <p class="text-sm mt-2 max-w-xl">
             For simplicity sake, here is some of the technology used to make this website.
@@ -150,7 +150,7 @@ function AboutSection() {
           </div>
         </A>
         <A href="/resume" class="p-2 rounded-xl border overflow-hidden relative h-72 group col-span-2">
-          <img src="/homes.jpg" alt="" class="bg-center bg-cover opacity-30 absolute left-0 top-0 w-full h-auto transition duration-300 group-hover:opacity-40" />
+          <img src="/homes.jpg" alt="" class="bg-center bg-cover opacity-30 absolute left-0 top-0 w-full h-auto transition duration-300 group-hover:opacity-40 aspect-square md:aspect-auto" />
           <div class="relative h-full">
             <h3 class="font-semibold text-2xl text-primary">Real Estate Associate</h3>
             <p class="text-sm mt-2">
