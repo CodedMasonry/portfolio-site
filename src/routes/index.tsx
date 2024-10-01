@@ -17,21 +17,19 @@ export default function Home() {
 function Hero() {
   return (
     <div class="bg-grid">
-      <div class="mx-40 translate-y-36 pb-40">
-        <div
-          class="flex"
-        >
+      <div class="mx-8 lg:mx-40 translate-y-36 pb-40">
+        <div class="flex flex-col md:flex-row items-center md:items-start">
           <img
             src="/drone_highway.jpg"
             alt="Headshot"
-            class="flex size-96 aspect-square rounded-2xl shadow-xl fade-in translate-in-2"
+            class="flex size-72 lg:size-96 aspect-square rounded-2xl shadow-xl fade-in translate-in-2"
           />
-          <div class="typewriter flex flex-col ml-8 mt-8">
+          <div class="typewriter flex flex-col ml-8 mt-8 items-center md:items-start">
             <h1 class="text-4xl font-bold max-w-96">Hello, I'm Brock.</h1>
             <h3 class="text-xl text-primary">Software Developer, Cybersecurity Enthusiast</h3>
             <p class="mt-4 max-w-3xl">
               I'm a high school student from Ohio with years of programming experience,
-              focusing on network programming, cryptography, and malware development.
+              focusing on network programming, and malware development.
               Having a diverse skill set in these areas gives me a well-rounded understanding of the cybersecurity landscape.
               I'm also passionate about bridging the gap between the technical and business aspects of technology,
               emphasizing clear communication and collaboration to push results.
@@ -41,7 +39,7 @@ function Hero() {
                 <img src="/icons/markdown.svg" alt="" class="size-6 mr-2" />
                 Resume.md
               </Button>
-              <Button as={A} href="/#about" variant="secondary" size="lg">
+              <Button as={A} href="/#about" variant="ghost" size="lg">
                 <img src="/icons/corner-left-down.svg" alt="" class="size-6 mr-2 invert" />
                 About Me</Button>
 
@@ -59,9 +57,9 @@ function Hero() {
 
 function AboutSection() {
   return (
-    <div class="pt-16 px-32 fade-in">
-      <h2 id="about" class="font-bold text-3xl">Who Am I?</h2>
-      <div class="my-4 grid md:grid-cols-5 gap-4">
+    <div class="pt-16 px-8 md:px-32 fade-in">
+      <h2 id="about" class="font-bold text-4xl ml-4">Who Am I?</h2>
+      <div class="my-4 grid md:grid-cols-2 xl:grid-cols-5 gap-4">
         <A href={github_url} class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
           <h3 class="font-semibold text-2xl text-primary">Software Developer</h3>
           <p class="text-sm mt-2">
@@ -100,8 +98,8 @@ function AboutSection() {
         </A>
         <A href="/risk-at-rest" class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors">
           <h3 class="font-semibold text-2xl text-primary">Risk At Rest: To What Extent Is The Government Protecting Our Data?</h3>
-          <p class="text-sm mt-2">
-            A Paper I have written in regards to government policies & initiatives to improve the cybersecurity landscape.
+          <p class="tex text-sm mt-2">
+            A Paper I have written in regards to government policies to improve the cybersecurity landscape.
           </p>
           <p class="flex items-center text-lg absolute bottom-4 right-4">Read
             <img src="/icons/arrow-right.svg" alt="" class="size-6 ml-2 invert" />
@@ -171,13 +169,11 @@ function AboutSection() {
 
 function Contact() {
   return (
-    <div class="pb-28 pt-10 px-32 fade-in">
-      <h2 id="about" class="font-bold text-3xl">Want To Know More?</h2>
-      <p class="max-w-xl mb-4 mt-2">Read my resume, it is a file dedicated to explaining who I am, what I do, and what I'm passionate about.</p>
-      <Button as={A} href="/resume" size="lg">
-        <img src="/icons/markdown.svg" alt="" class="size-6 mr-2" />
-        Resume.md
-      </Button>
-    </div>
+    <div class="py-6 mt-10 px-8 md:px-32 fade-in bg-accent/50">
+      <div class="flex flex-col md:flex-row md:space-x-4 my-auto text-xl">
+        <p>Brock Mason Shaffer</p>
+        <p class="font-semibold">Mason@CodedMasonry.com</p>
+      </div>
+    </div >
   )
 }
