@@ -24,10 +24,10 @@ function Hero() {
             alt="Headshot"
             class="flex size-72 lg:size-96 aspect-square rounded-2xl shadow-xl fade-in translate-in-2"
           />
-          <div class="typewriter flex flex-col ml-8 mt-8 items-center md:items-start">
+          <div class="typewriter flex flex-col md:ml-8 mt-8 items-center md:items-start">
             <h1 class="text-2xl md:text-4xl font-bold max-w-fit">Hello, I'm Brock.</h1>
             <h3 class="text-xl text-primary text-center md:text-start">Software Developer, Cybersecurity Enthusiast</h3>
-            <p class="mt-8 w-fit lg:max-w-3xl">
+            <p class="mt-8 w-2 lg:max-w-3xl">
               I'm a high school student from Ohio with years of programming experience,
               focusing on network programming, and malware development.
               Having a diverse skill set in these areas gives me a well-rounded understanding of the cybersecurity landscape.
