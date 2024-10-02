@@ -17,7 +17,7 @@ export default function Home() {
 function Hero() {
   return (
     <div class="bg-grid">
-      <div class="mx-8 lg:mx-40 translate-y-12 pb-20 md:translate-y-36 md:pb-40">
+      <div class="mx-4 md:mx-8 lg:mx-40 translate-y-12 pb-20 md:translate-y-36 md:pb-40">
         <div class="flex flex-col md:flex-row items-center md:items-start">
           <img
             src="/drone_highway.jpg"
@@ -27,7 +27,7 @@ function Hero() {
           <div class="typewriter flex flex-col md:ml-8 mt-8 items-center md:items-start">
             <h1 class="text-2xl md:text-4xl font-bold max-w-80 md:max-w-96">Hello, I'm Brock.</h1>
             <h3 class="text-xl text-primary text-center md:text-start text-wrap">Software Developer, Cybersecurity Enthusiast</h3>
-            <p class="mt-8 md:max-w-2xl lg:max-w-3xl text-wrap">
+            <p class="mt-8 max-w-xl md:max-w-2xl lg:max-w-3xl text-wrap">
               I'm a high school student from Ohio with years of programming experience,
               focusing on network programming, and malware development.
               Having a diverse skill set in these areas gives me a well-rounded understanding of the cybersecurity landscape.
