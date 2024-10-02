@@ -17,7 +17,7 @@ export default function Home() {
 function Hero() {
   return (
     <div class="bg-grid">
-      <div class="mx-8 lg:mx-40 translate-y-12 pb-20 md:translate-y-36 md:pb-40">
+      <div class="mx-4 lg:mx-40 translate-y-12 pb-20 md:translate-y-36 md:pb-40">
         <div class="flex flex-col md:flex-row items-center md:items-start">
           <img
             src="/drone_highway.jpg"
@@ -25,9 +25,9 @@ function Hero() {
             class="flex size-72 lg:size-96 aspect-square rounded-2xl shadow-xl fade-in translate-in-2"
           />
           <div class="typewriter flex flex-col ml-8 mt-8 items-center md:items-start">
-            <h1 class="text-4xl font-bold max-w-96">Hello, I'm Brock.</h1>
+            <h1 class="text-3xl md:text-4xl font-bold max-w-96">Hello, I'm Brock.</h1>
             <h3 class="text-xl text-primary text-center md:text-start">Software Developer, Cybersecurity Enthusiast</h3>
-            <p class="mt-4 max-w-3xl">
+            <p class="mt-4 max-w-2xl md:max-w-3xl">
               I'm a high school student from Ohio with years of programming experience,
               focusing on network programming, and malware development.
               Having a diverse skill set in these areas gives me a well-rounded understanding of the cybersecurity landscape.
@@ -35,15 +35,15 @@ function Hero() {
               emphasizing clear communication and collaboration to push results.
             </p>
             <div class="flex flex-col md:flex-row mt-8 md:space-x-4">
-              <Button as={A} href="/resume" class="md:h-11 md:rounded-md md:px-8">
+              <Button as={A} href="/resume" size="lg">
                 <img src="/icons/markdown.svg" alt="" class="size-6 mr-2" />
                 Resume.md
               </Button>
-              <Button as={A} href="/#about" variant="ghost" class="md:h-11 md:rounded-md md:px-8">
+              <Button as={A} href="/#about" variant="ghost" size="lg">
                 <img src="/icons/corner-left-down.svg" alt="" class="size-6 mr-2 invert" />
                 About Me</Button>
 
-              <Button as={A} href={github_url} variant="ghost" class="md:h-11 md:rounded-md md:px-8">
+              <Button as={A} href={github_url} variant="ghost" size="lg">
                 <img src="/icons/github.svg" alt="" class="size-6 mr-2 invert" />
                 Github
               </Button>
@@ -57,7 +57,7 @@ function Hero() {
 
 function AboutSection() {
   return (
-    <div class="pt-16 px-8 md:px-32 fade-in">
+    <div class="pt-16 px-4 md:px-32 fade-in">
       <h2 id="about" class="font-bold text-4xl ml-4 text-center md:text-start">Who Am I?</h2>
       <div class="my-4 grid md:grid-cols-2 xl:grid-cols-5 gap-4">
         <A href={github_url} class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
