@@ -25,7 +25,7 @@ function Hero() {
             class="flex size-72 lg:size-96 aspect-square rounded-2xl shadow-xl fade-in translate-in-2"
           />
           <div class="typewriter flex flex-col md:ml-8 mt-8 items-center md:items-start">
-            <h1 class="text-2xl md:text-4xl font-bold max-w-80 md:max-w-96">Hello, I'm Brock.</h1>
+            <h1 class="text-2xl md:text-4xl font-bold max-w-fit md:max-w-96">Hello, I'm Brock.</h1>
             <h3 class="text-xl text-primary text-center md:text-start text-wrap">Software Developer, Cybersecurity Enthusiast</h3>
             <p class="mt-8 max-w-xl md:max-w-2xl lg:max-w-3xl text-wrap">
               I'm a high school student from Ohio with years of programming experience,
