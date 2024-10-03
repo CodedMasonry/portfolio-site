@@ -27,7 +27,7 @@ function Hero() {
             <h1 class="text-2xl md:text-4xl font-bold max-w-64 md:max-w-96">Hello, I'm Brock.</h1>
             <h3 class="text-xl text-primary text-center md:text-start text-wrap">Software Developer, Cybersecurity Enthusiast</h3>
             <p class="mt-8 max-w-xl md:max-w-2xl lg:max-w-3xl text-wrap">
-              I'm a high school student from Ohio with years of programming experience,
+              I'm a high school student from Columbus, Ohio with years of programming experience,
               focusing on network programming, and malware development.
               Having a diverse skill set in these areas gives me a well-rounded understanding of the cybersecurity landscape.
               I'm also passionate about bridging the gap between the technical and business aspects of technology,
