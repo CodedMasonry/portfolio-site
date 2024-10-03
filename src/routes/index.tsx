@@ -58,7 +58,7 @@ function AboutSection() {
   return (
     <div class="pt-16 px-4 md:px-32 fade-in">
       <h2 id="about" class="font-bold text-4xl ml-4 text-center md:text-start">Who Am I?</h2>
-      <div class="my-4 flex flex-col space-y-4 md:space-y-0 md:flex-none md:grid md:grid-cols-2 xl:grid-cols-5 md:gap-4">
+      <div class="my-4 grid md:grid-cols-2 xl:grid-cols-5 gap-4">
         <A href={github_url} class="p-2 rounded-xl border overflow-hidden relative h-72 bg-accent/20 hover:bg-accent/40 transition-colors col-span-2">
           <h3 class="font-semibold text-2xl text-primary">Software Developer</h3>
           <p class="text-sm mt-2">
