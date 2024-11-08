@@ -30,7 +30,7 @@ export default function Home() {
                 </p>
                 <img src="/icons/copy.svg" alt="" class="size-10 ml-auto invert" />
             </Button>
-            <p class="text-center text-sm mt-2 max-w-4xl">{searchParams.code}</p>
+            <p class="text-center text-xs mt-2 max-w-5xl">{searchParams.code}</p>
             {copied() && <p class="text-green-500 text-center mt-2">Copied to clipboard!</p>}
         </main>
     );
